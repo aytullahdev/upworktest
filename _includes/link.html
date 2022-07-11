@@ -1,7 +1,7 @@
 {%- assign type = include.type | default: "link" -%}
 {%- assign type = site.data.links[type] -%}
 {%- assign link = include.link -%}
-
+{%- assign projects = include.projects -%}
 {%- if type and link -%}
 
   {%- assign icon = include.icon -%}
@@ -31,4 +31,11 @@
       <span class="truncate">{{ text }}</span>
     {%- endif -%}
   </a>
+  {%- if projects -%}
+    <ul>
+     {%- for project in projects -%}
+        <li>project.text</li>
+     {%- endfor -%}
+    </ul>
+  {%- endif -%}
 {%- endif -%}

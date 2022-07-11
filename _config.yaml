@@ -8,8 +8,16 @@ footer: images/background.png
 nav:
   - link: publications
     tooltip: Published works
-  - research:
+  - research: 
     tooltip: Research interests
+    projects:
+      - project1:
+        text: project 1
+        link: project
+      - project2:
+        text: project 2
+        link: test project
+
   - teaching:
     tooltip: Teaching
   - link: team
