@@ -31,11 +31,12 @@
       <span class="truncate">{{ text }}</span>
     {%- endif -%}
   </a>
-  {%- if projects -%}
-    <ul>
-     {%- for project in projects -%}
-        <li>project.text</li>
-     {%- endfor -%}
-    </ul>
+  {%- if text == "research" -%}
+     <ul>
+        <li>
+            OK
+        </li>
+     </ul>
+    
   {%- endif -%}
 {%- endif -%}
